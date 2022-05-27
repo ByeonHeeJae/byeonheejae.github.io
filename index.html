@@ -1,32 +1,118 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset='utf-8'>
 <style>
-    body {text-align: center;}
-    table, th, tr, td {
+* {margin:0;
+border:0;}
+body {background-color: gainsboro;}
+.clear {clear: both;}
+#inline1 {float: left; margin-right: 50px; margin-left: 50px;}
+#inline2 {float: left;}
+table, th, tr, td {
         border: solid 1px black;
         border-collapse: collapse;
-        padding: 8px;
+        padding: 5px;
     }
-    h2 {text-shadow: 1px 2px 10px yellow;}
-    .block {background-color: yellow;
+.h2 {text-shadow: 1px 2px 10px yellow;
+	text-align: center;}
+.block {background-color: yellow;
     text-align: center;}
-    .block2 {text-align: center;}
-    a:link {text-decoration: none; color: black;}
-    a:visited {text-decoration: none; color: black;}
-    a:hover {text-decoration: none; color: yellow;}
-    th, td {width: 120px;
-    padding: 10px;
+.block2 {text-align: center;}
+th, td {width: 30px;
+    padding: 5px;
     height: 30px;
+	font-size: 1px;
+	background-color: white;
 }
-    </style>
+#title{text-align: center; padding: 32px 0; font-size: 30px;}
+.sp {background-color: white;
+border: double 2px gray;}
+a:link {text-decoration: none; color: black;}
+a:visited {text-decoration: none; color: black;}
+a:hover {text-decoration: none; color: yellow;}
+header, nav, section, aside, footer {
+	border: solid 0px red;}
+header {
+	width: 1200px;
+	height:100px; text-align: center;
+}
+nav {
+	width: 1200px;
+	height: 100px;
+}
+
+section {
+	width: 674px;
+	height: 600px;
+	float: left;
+	margin-right: 50px;
+	margin-top: 10px;
+	margin-left: 50px;
+}
+aside {
+	width: 300px;
+	height: 600px;
+	float: left;
+	margin-top: 10px;
+}
+.box {border: double 2px gray; background-color: white; color: black; text-decoration: none;  
+width: 200px; padding: 35.2px 0; text-align: center; font-size: 13px;}
+.box:link{border: double 2px gray; background-color: none; background-color:
+ white; color: gray; text-decoration: none;  width: 200px; padding: 36.5px 0; text-align: center; }
+.box:visited{background-color: none; background-color: white; color: black;
+text-decoration: none; }
+.box:hover{ background-color: none; background-color: gray; color: black; text-decoration: none; }
+
+footer {
+	width: 920px;
+	height: 150px;
+	margin-top: 10px;
+	background-color: white;
+	font-size: 20px;
+	margin-left: 60px;
+	text-align: center;
+	border: double 2px gray;
+}
+.tab2 {
+  border: solid 2px gray;
+  padding: 1px;
+}
+.tab3 {width: 90px;
+height: 82px;}
+h3 {text-align: center;
+text-shadow: 1px 2px 7px yellow;}
+th {text-align: left;
+vertical-align: top;}
+td {vertical-align: top;
+text-align: left;}
+.red {color: red;}
+.blue {color: blue;}
+img {width: 80px; height: 80px;}
+#insta {float:left;}
+#face {float:left;}
+#sns {margin-left: 500px;
+
+}
+</style>
 </head>
 <body>
-    <h2>
+<header>
+	<div id="title"><span class="sp">HeeJae`s Web</span></div>
+</header>
+<nav>
+<div id="sns">
+<div id="insta"><a href="https://www.instagram.com/0130_h_j/">
+	<img src="img/인스타.jpg"></a></div>
+<div id="face"><a href="https://www.facebook.com/profile.php?id=100006463361833"><img src="img/페이스북.png"></a></div>
+</div>
+</nav>
+<section>
+<div id="inline1">
+	<h3>
         22년도 1학기 시간표
     </h2>
-<table align="center">
+<table>
     <tr>
         <td></td>
         <th class="block2">월요일</th>
@@ -62,8 +148,9 @@
 <tr>
         <td class="block2">4교시</td>
         <td></td>
-        <td class="block">대학영어회화2</td>
+        <td class="block">영어회화2</td>
         <td></td>
+		<td></td>
     </tr>   
 <tr>
         <td class="block2">5교시</td>
@@ -71,6 +158,7 @@
         <td></td>
         <td></td>
         <td></td>
+		<td></td>
     </tr>   
 <tr>
         <td class="block2">6교시</td>
@@ -88,8 +176,8 @@
     </tr>   
 <tr>
         <td class="block2">8교시</td>
-        <td class="block">대학영어<br>강독2</td>
-        <td rowspan="3" class="block">4차산업혁명과<br>유비쿼터스</td>
+        <td class="block">영어<br>강독2</td>
+        <td rowspan="3" class="block">산업혁명과<br>유비쿼터스</td>
         <td></td>
         <td></td>
         <td></td>
@@ -106,6 +194,7 @@
         <td></td>
         <td></td>
         <td></td>
+		<td></td>
     </tr>   
 <tr>
         <td class="block2">11교시</td>
@@ -117,12 +206,102 @@
     </tr>   
 
 </table>
-<a href='form.html'>회원가입</a><br>
-<a href="rubato.html">루바토 펜션 안내</a><br>
-<a href="행사안내.html">호서 국제 기타 페스티벌 안내</a><br>
-<a href="호서 야간 개장.html">호서 야간 개장 안내</a><br>
-<a href="세일 안내장.html">세일 안내장</a><br>
-<a href="월간 계획표.html">월간 계획표</a><br>
-<a href="쇼핑몰 판매 목록.html">쇼핑몰 판매 목록</a>
+</div>
+<div id="inline2">
+<h3>22년 5월 일정표</h3>
+<table id="tab2">
+  <tr class="tab3">
+	<th class="red">일</th>
+	<th>월</th>
+	<th>화</th>
+	<th>수</th>
+	<th>목</th>
+	<th>금</th>
+	<th class="blue">토</th>
+  </tr>
+  <tr class="tab3">
+	<th><span class="red">1</span><br>
+	[알바 11~21]</th>
+	<th>2</th>    
+	<th>3</th>  
+	<th>4</th>
+	<th><span class="red">5</span><br>
+	  <mark>[어린이날]</mark><br>
+	  <mark>김유림생일</mark>
+	</th>
+	<th>6</th>
+	<th><span class="blue">7</span>
+	<br>[알바 10~20]
+  </th>    
+  </tr>
+  <tr class="tab3">
+	<th><span class="red">8</span><br>
+	[어버이날]<br>
+	[알바 10~20]
+	</th>
+	<th>9</th>
+	<th>10<br>
+	<mark>노들바</mark><br>
+	<mark>월급날</mark></th>
+	<th>11</th>
+	<th>12</th>
+	<th>13</th>
+	<th><span class="blue">14</span><br>
+	[알바 14:30~21]</th>
+  </tr>
+  <tr class="tab3">
+	<th><span class="red">15</span><br>
+	[알바 11~21]</th>
+	<th>16</th>
+	<th>17<br>
+	<mark>학습공동체</mark></th>
+	<th>18</th>
+	<th>19</th>
+	<th>20</th>
+	<th><span class="blue">21</span><br>
+	[알바 10~20]</th>
+  </tr>
+  <tr class="tab3">
+	<th><span class="red">22</span><br>
+	[알바 10~20]</th>
+	<th>23</th>
+	<th>24</th>
+	<th>25</th>
+	<th>26</th>
+	<th>27</th>
+	<th><span class="blue">28</span><br>
+	[알바 11~21]</th>
+  </tr>
+  <tr class="tab3">
+	<th><span class="red">29</span><br>
+	[알바 11~21]</th>
+	<th>30</th>
+	<th>31<br>
+	<mark><a href="https://map.naver.com/v5/entry/place/1562452891?c=14142178.9037597,4509434.7928596,15,0,0,0,dh&placePath=%3Fentry=plt">
+	알바회식</a></mark></th>
+	<th></th>
+	<th></th>
+	<th></th>
+	<th></th>
+  </tr>
+
+</table>
+</div>
+</section>
+<aside>
+	<div class="box"><a href='form.html'>회원가입</a></div>
+	<div class="box"><a href="rubato.html">루바토 펜션 안내</a></div>
+	<div class="box"><a href="행사안내.html">호서 국제 기타 페스티벌 안내</a></div>
+	<div class="box"><a href="호서 야간 개장.html">호서 야간 개장 안내</a></div>
+	<div class="box"><a href="세일 안내장.html">세일 안내장</a></div>
+	<div class="box"><a href="쇼핑몰 판매 목록.html">쇼핑몰 판매 목록</a></div>
+</div>
+</aside>
+<div class="clear"></div>
+<footer>
+	<div><a href="http://www.hoseo.ac.kr/Home/Main.mbz"><img src="img/1.jpg"></a></div>
+	호서대학교 디지털 기술경영학과<br>
+	(천안캠퍼스 1호관 105호) 041-560-8348
+</footer>
 </body>
 </html>
